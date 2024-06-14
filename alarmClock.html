@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Take A Break!</title>
+  </head>
+  <body onload="playAlarm()">
+    <h1 style="">
+      Take A Break!
+    </h1>
+    <audio id="alarm" src="yoursample.ogg" preload="auto" style="display: none;">
+    <script>
+      const playAlarm = () = {
+        const alarm = document.getElementById("alarm");
+        alarm.play()
+      }
+    </script>
+  </body>
+</html>
