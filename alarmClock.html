@@ -4,13 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Take A Break!</title>
   </head>
-  <body onload="playAlarm()">
-    <h1 style="">
+  <body onload="playAlarm()" style="height:100%; background: #f00; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <h1 style="color: #fff; font-family: sans-serif; font-style: bold; font-size: 10em; text-align: center;">
       Take A Break!
     </h1>
-    <audio id="alarm" src="yoursample.ogg" preload="auto" style="display: none;">
+    <p style="color: #fff; font-family: monospace; font-style: bold; font-size: 2em;">Look at something 20 meters away for 20 seconds</p>
+    <audio id="alarm" src="./sounds/Alarm03.ogg" preload="auto" style="display: none;">
     <script>
-      const playAlarm = () = {
+      const playAlarm = () => {
         const alarm = document.getElementById("alarm");
         alarm.play()
       }
